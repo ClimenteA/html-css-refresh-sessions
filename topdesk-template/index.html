@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./public/unocss.js"></script>
+    <script defer src="./public/alpinejs.js"></script>
+    <link rel="stylesheet" href="./public/custom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <title>TopDesk</title>
+</head>
+
+<body un-cloak class="bg-amber-50">
+
+    <nav class="container mx-auto lg:flex justify-between place-items-center lg:px-4 text-xs border-b-1 border-solid">
+
+        <div>
+            <a href="#" class="text-black font-bold text-lg">
+                topdesk
+            </a>
+        </div>
+
+        <div class="flex space-x-6 place-items-center">
+
+            <div class="flex space-x-4">
+                <div x-data="{show: false}" x-on:click.outside="show=false;">
+
+                    <button x-on:click="show=!show;" class="py-4" x-bind:class="show ? 'font-bold' : ''">
+                        Products
+                    </button>
+
+                    <div x-show="show" class="absolute flex mt-1">
+                        <div class="grid grid-cols-2 gap-x-4 gap-y-6 p-6 bg-amber-100 max-w-fit rounded-md shadow-sm">
+
+                            <a class="text-black w-full" href="#">
+                                <hgroup
+                                    class="cursor-pointer bg-orange-100 hover:bg-orange-50 hover:shadow-sm px-6 py-4 rounded-sm">
+                                    <h1 class="font-bold text-sm">Topdesk for service</h1>
+                                    <h2 class="text-xs">Lorem, ipsum dolor.</h2>
+                                </hgroup>
+                            </a>
+                            <a class="text-black w-full" href="#">
+                                <hgroup
+                                    class="cursor-pointer bg-orange-100 hover:bg-orange-50 hover:shadow-sm px-6 py-4 rounded-sm">
+                                    <h1 class="font-bold text-sm">Topdesk for sales</h1>
+                                    <h2 class="text-xs">Lorem ipsum dolor sit amet.</h2>
+                                </hgroup>
+                            </a>
+
+                            <a class="text-black w-full" href="#">
+                                <hgroup
+                                    class="cursor-pointer bg-orange-100 hover:bg-orange-50 hover:shadow-sm px-6 py-4 rounded-sm">
+                                    <h1 class="font-bold text-sm">Lorem, ipsum.</h1>
+                                    <h2 class="text-xs">Lorem ipsum dolor sit amet.</h2>
+                                </hgroup>
+                            </a>
+                            <a class="text-black w-full" href="#">
+                                <hgroup
+                                    class="cursor-pointer bg-orange-100 hover:bg-orange-50 hover:shadow-sm px-6 py-4 rounded-sm">
+                                    <h1 class="font-bold text-sm">Marketplace</h1>
+                                    <h2 class="text-xs">Apps, integrations, and partners</h2>
+                                </hgroup>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div x-data="{show: false}" x-on:click.outside="show=false;">
+
+                    <button x-on:click="show=!show;" class="py-4"
+                        x-bind:class="show ? 'font-bold' : ''">Pricing</button>
+
+                    <div x-show="show" class="absolute flex mt-1">
+                        <div class="grid grid-cols-1 gap-x-4 gap-y-6 p-6 bg-amber-100 max-w-fit rounded-md shadow-sm">
+
+                            <a class="text-black w-full" href="#">
+                                <hgroup
+                                    class="cursor-pointer bg-orange-100 hover:bg-orange-50 hover:shadow-sm px-6 py-4 rounded-sm">
+                                    <h1 class="font-bold text-sm">Topdesk for service</h1>
+                                    <h2 class="text-xs">Lorem ipsum dolor sit amet consectetur.</h2>
+                                </hgroup>
+                            </a>
+
+                            <a class="text-black w-full" href="#">
+                                <hgroup
+                                    class="cursor-pointer bg-orange-100 hover:bg-orange-50 hover:shadow-sm px-6 py-4 rounded-sm">
+                                    <h1 class="font-bold text-sm">Topdesk for sales</h1>
+                                    <h2 class="text-xs">The best sales solution</h2>
+                                </hgroup>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div x-data="{show: false}" x-on:click.outside="show=false;">
+
+                    <button x-on:click="show=!show;" class="py-4"
+                        x-bind:class="show ? 'font-bold' : ''">Solutions</button>
+
+                    <div x-show="show" class="absolute flex mt-1">
+                        <div class="grid grid-cols-2 gap-x-4 gap-y-6 p-6 bg-amber-100 max-w-fit rounded-md shadow-sm">
+
+                            <a class="text-black w-full" href="#">
+                                <hgroup
+                                    class="cursor-pointer bg-orange-100 hover:bg-orange-50 hover:shadow-sm px-6 py-4 rounded-sm">
+                                    <h1 class="font-bold text-sm">Enterprise</h1>
+                                    <h2 class="text-xs">Lorem ipsum dolor sit amet.</h2>
+                                </hgroup>
+                            </a>
+
+                            <a class="text-black w-full" href="#">
+                                <hgroup
+                                    class="cursor-pointer bg-orange-100 hover:bg-orange-50 hover:shadow-sm px-6 py-4 rounded-sm">
+                                    <h1 class="font-bold text-sm">Employee experience</h1>
+                                    <h2 class="text-xs">Lorem ipsum dolor sit amet consectetur.</h2>
+                                </hgroup>
+                            </a>
+                            <a class="text-black w-full" href="#">
+                                <hgroup
+                                    class="cursor-pointer bg-orange-100 hover:bg-orange-50 hover:shadow-sm px-6 py-4 rounded-sm">
+                                    <h1 class="font-bold text-sm">Conversational CRM</h1>
+                                    <h2 class="text-xs">Lorem ipsum dolor sit.</h2>
+                                </hgroup>
+                            </a>
+
+                            <a class="text-black w-full" href="#">
+                                <hgroup
+                                    class="cursor-pointer bg-orange-100 hover:bg-orange-50 hover:shadow-sm px-6 py-4 rounded-sm">
+                                    <h1 class="font-bold text-sm">Small & medium businesses</h1>
+                                    <h2 class="text-xs">Lorem, ipsum dolor.</h2>
+                                </hgroup>
+                            </a>
+                            <a class="text-black w-full" href="#">
+                                <hgroup
+                                    class="cursor-pointer bg-orange-100 hover:bg-orange-50 hover:shadow-sm px-6 py-4 rounded-sm">
+                                    <h1 class="font-bold text-sm">Industries</h1>
+                                    <h2 class="text-xs">Lorem ipsum dolor sit amet.</h2>
+                                </hgroup>
+                            </a>
+                            <a class="text-black w-full" href="#">
+                                <hgroup
+                                    class="cursor-pointer bg-orange-100 hover:bg-orange-50 hover:shadow-sm px-6 py-4 rounded-sm">
+                                    <h1 class="font-bold text-sm">Startups</h1>
+                                    <h2 class="text-xs">Lorem ipsum dolor sit amet, consectetur adipisicing.</h2>
+                                </hgroup>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <button>Demo</button>
+
+                <div x-data="{show: false}" x-on:click.outside="show=false;">
+
+                    <button x-on:click="show=!show;" class="py-4"
+                        x-bind:class="show ? 'font-bold' : ''">Resources</button>
+
+                    <div x-show="show" class="absolute flex mt-1">
+                        <div class="grid grid-cols-2 gap-x-4 gap-y-6 p-6 bg-amber-100 max-w-fit rounded-md shadow-sm">
+
+                            <a class="text-black w-full" href="#">
+                                <hgroup
+                                    class="cursor-pointer bg-orange-100 hover:bg-orange-50 hover:shadow-sm px-6 py-4 rounded-sm">
+                                    <h1 class="font-bold text-sm">Blog</h1>
+                                    <h2 class="text-xs">Guides, reports, and best practices</h2>
+                                </hgroup>
+                            </a>
+
+                            <a class="text-black w-full" href="#">
+                                <hgroup
+                                    class="cursor-pointer bg-orange-100 hover:bg-orange-50 hover:shadow-sm px-6 py-4 rounded-sm">
+                                    <h1 class="font-bold text-sm">API & Developers</h1>
+                                    <h2 class="text-xs">Info for building things with topdesk</h2>
+                                </hgroup>
+                            </a>
+                            <a class="text-black w-full" href="#">
+                                <hgroup
+                                    class="cursor-pointer bg-orange-100 hover:bg-orange-50 hover:shadow-sm px-6 py-4 rounded-sm">
+                                    <h1 class="font-bold text-sm">Events and webinars</h1>
+                                    <h2 class="text-xs">Learn from wherever you are</h2>
+                                </hgroup>
+                            </a>
+
+                            <a class="text-black w-full" href="#">
+                                <hgroup
+                                    class="cursor-pointer bg-orange-100 hover:bg-orange-50 hover:shadow-sm px-6 py-4 rounded-sm">
+                                    <h1 class="font-bold text-sm">Partners</h1>
+                                    <h2 class="text-xs">How to locate or become a topdesk partner</h2>
+                                </hgroup>
+                            </a>
+
+                            <a class="text-black w-full" href="#">
+                                <hgroup
+                                    class="cursor-pointer bg-orange-100 hover:bg-orange-50 hover:shadow-sm px-6 py-4 rounded-sm">
+                                    <h1 class="font-bold text-sm">Training and certification</h1>
+                                    <h2 class="text-xs">Learn how to use topdesk and prove your expertise</h2>
+                                </hgroup>
+                            </a>
+
+                            <a class="text-black w-full" href="#">
+                                <hgroup
+                                    class="cursor-pointer bg-orange-100 hover:bg-orange-50 hover:shadow-sm px-6 py-4 rounded-sm">
+                                    <h1 class="font-bold text-sm">Customer stories</h1>
+                                    <h2 class="text-xs">See what success with topdesk looks like</h2>
+                                </hgroup>
+                            </a>
+
+                            <a class="text-black w-full" href="#">
+                                <hgroup
+                                    class="cursor-pointer bg-orange-100 hover:bg-orange-50 hover:shadow-sm px-6 py-4 rounded-sm">
+                                    <h1 class="font-bold text-sm">Community</h1>
+                                    <h2 class="text-xs">Connect, learn, and engage with topdesk users</h2>
+                                </hgroup>
+                            </a>
+
+                            <a class="text-black w-full" href="#">
+                                <hgroup
+                                    class="cursor-pointer bg-orange-100 hover:bg-orange-50 hover:shadow-sm px-6 py-4 rounded-sm">
+                                    <h1 class="font-bold text-sm">Community</h1>
+                                    <h2 class="text-xs">Connect, learn, and engage with topdesk users</h2>
+                                </hgroup>
+                            </a>
+
+                            <a class="text-black w-full" href="#">
+                                <hgroup
+                                    class="cursor-pointer bg-orange-100 hover:bg-orange-50 hover:shadow-sm px-6 py-4 rounded-sm">
+                                    <h1 class="font-bold text-sm">Newsroom</h1>
+                                    <h2 class="text-xs">Company news and announcements</h2>
+                                </hgroup>
+                            </a>
+
+                            <a class="text-black w-full" href="#">
+                                <hgroup
+                                    class="cursor-pointer bg-orange-100 hover:bg-orange-50 hover:shadow-sm px-6 py-4 rounded-sm">
+                                    <h1 class="font-bold text-sm">Professional services</h1>
+                                    <h2 class="text-xs">Get hands-on help, dedicated support or expert guidance</h2>
+                                </hgroup>
+                            </a>
+
+                            <a class="text-black w-full" href="#">
+                                <hgroup
+                                    class="cursor-pointer bg-orange-100 hover:bg-orange-50 hover:shadow-sm px-6 py-4 rounded-sm">
+                                    <h1 class="font-bold text-sm">Trust and security</h1>
+                                    <h2 class="text-xs">Your business is protected with topdesk</h2>
+                                </hgroup>
+                            </a>
+
+                            <a class="text-black w-full" href="#">
+                                <hgroup
+                                    class="cursor-pointer bg-orange-100 hover:bg-orange-50 hover:shadow-sm px-6 py-4 rounded-sm">
+                                    <h1 class="font-bold text-sm">What's New with topdesk</h1>
+                                    <h2 class="text-xs">Check out recent product updates</h2>
+                                </hgroup>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <ul class="flex space-x-4">
+
+                <button class="bg-purple-700 text-white py-1 px-2 rounded-full font-bold">
+                    Free trial
+                </button>
+
+                <button class="bg-white text-dark border-solid border-1 py-1 px-2 rounded-full font-bold">
+                    Buy now
+                </button>
+            </ul>
+
+        </div>
+
+    </nav>
+
+    <section class="container mx-auto lg:mt-32 mt-12 grid lg:grid-cols-2 grid-cols-1">
+
+        <div class="mx-2">
+
+            <hgroup>
+                <h1 class="font-serif font-bold lg:text-6xl text-4xl">Unlock the power <br> of customer experiences</h1>
+                <h2 class="text-lg mt-4">Build lasting relationships with our complete customer service solution.</h2>
+            </hgroup>
+
+            <div class="flex space-x-4 my-12">
+                <a href="#" class="flex place-items-center bg-purple-700 text-white py-4 px-6 rounded-full font-bold">
+                    <span class="mr-4 lg:text-lg">Start your free trial</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6 slide-right"
+                        viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                    </svg>
+                </a>
+                <a href="#"
+                    class="flex place-items-center bg-white text-dark border border-solid py-4 px-6 rounded-full font-bold">
+                    View demo
+                </a>
+            </div>
+
+        </div>
+
+        <figure class="lg:block hidden">
+            <img class="w-full aspect-video rounded-lg" src="./public/office.jpg" alt="Image with an office meeting">
+        </figure>
+
+    </section>
+
+    <section class="lg:mt-24 bg-gradient-to-b from-fuchsia-200">
+
+        <div class="container mx-auto">
+
+            <hgroup class="flex flex-col place-items-center">
+                <p class="bg-lime-200 font-thin p-1 my-6 w-fit">NEW</p>
+                <h1 class="font-serif font-bold lg:text-6xl text-4xl text-center w-3/4">
+                    The Next Big topdesk AI Drop
+                </h1>
+                <h2 class="text-lg mt-4 text-center w-4/5">
+                    We announced topdesk AI in May, but that was only the start.
+                    Our next set of features pushes AI from helpful sidekick to essential—and industry changing—support
+                    technology.
+                </h2>
+            </hgroup>
+
+            <div class="grid lg:grid-cols-3 grid-cols-1 gap-6 mt-16">
+
+                <a href="#" class="text-black">
+                    <div class="flex flex-col place-items-center space-y-2">
+                        <figure>
+                            <img class="w-full aspect-video rounded-lg object-cover" src="./public/abstract1.jpg"
+                                alt="Abstract 1">
+                        </figure>
+                        <span class="font-mono">DIGITAL EVENT</span>
+                        <h1 class="font-serif font-bold text-3xl">The latest and greatest</h1>
+                        <p class="text-center">Our new Generative AI and advanced security offerings have arrived.</p>
+                        <button class="flex align-items-center">
+                            <span class="font-bold underline mt-1">Find out more</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </button>
+                    </div>
+                </a>
+
+                <a href="#" class="text-black">
+                    <div class="flex flex-col place-items-center space-y-2">
+                        <figure>
+                            <img class="w-full aspect-video rounded-lg object-cover" src="./public/abstract3.jpg"
+                                alt="Abstract 3">
+                        </figure>
+                        <span class="font-mono">topdesk AI</span>
+                        <h1 class="font-serif font-bold text-3xl">Take AI even further</h1>
+                        <p class="text-center">Be among the first to access our newest AI features.</p>
+                        <button class="flex align-items-center">
+                            <span class="font-bold underline mt-1">Find out more</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </button>
+                    </div>
+                </a>
+
+                <a href="#" class="text-black">
+                    <div class="flex flex-col place-items-center space-y-2">
+                        <figure>
+                            <img class="w-full aspect-video rounded-lg object-cover" src="./public/abstract2.jpg"
+                                alt="Abstract 2">
+                        </figure>
+                        <span class="font-mono">ADVANCED DATA PRIVACY AND PRODECTION</span>
+                        <h1 class="font-serif font-bold text-3xl">Security gets upgraded</h1>
+                        <p class="text-center">topdesk takes security seriously. Now with even more protection.</p>
+                        <button class="flex align-items-center">
+                            <span class="font-bold underline mt-1">Find out more</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </button>
+                    </div>
+                </a>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+    <section class="my-24 bg-stone-100">
+
+        <div class="container mx-auto pb-24">
+
+            <hgroup class="flex lg:flex-row place-items-center flex-col py-16 w-3/4 mx-auto">
+                <h1 class="font-serif font-bold lg:text-4xl text-2xl w-full">Take a quick tour</h1>
+                <h2 class="text-md lg:mt-0 mt-4">Experience topdesk like your agents will. Our customer service solution
+                    comes with
+                    everything you
+                    need to provide exceptional support.
+                </h2>
+            </hgroup>
+
+            <div class="relative">
+
+                <figure class="lg:w-3/4 mx-auto">
+                    <img class="w-full aspect-video rounded-lg object-cover" src="./public/furniture.jpg"
+                        alt="Furniture">
+                </figure>
+
+                <div
+                    class="grid grid-cols-1 bg-stone-200 p-12 absolute lg:w-1/4 w-52 left-1/3 lg:top-32 top-12 rounded-lg">
+
+                    <hgroup>
+                        <h1 class="font-serif font-bold lg:text-2xl text-xl w-full">
+                            See topdesk in action
+                        </h1>
+                        <h2 class="mt-6">
+                            Let's see how a furniture store provides great customer support with topdesk.
+                        </h2>
+                    </hgroup>
+
+                    <div class="mt-12">
+                        <a href="#" class="bg-purple-700 text-white py-4 px-6 rounded-full font-bold">
+                            Start tour
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="container mx-auto">
+        <div class="border-b-2 border-solid border-gray-300 py-4">
+            <span class="font-mono lg:ml-0 ml-4">BENEFITS</span>
+        </div>
+
+        <div x-data="{selected: 'card'}">
+
+            <div class="grid lg:grid-cols-3 grid-cols-1 place-items-left lg:ml-0 ml-4 gap-4 mt-16">
+
+                <button x-on:click="selected = 'card'" x-bind:class="selected == 'card' ? 'bg-yellow-100': ''"
+                    class="flex gap-4 place-items-center border border-solid rounded-full px-6 w-fit">
+                    <img class="h-24 w-24" src="./public/bank-card-svgrepo-com.svg" alt="Bank SVG">
+                    <p class="font-bold text-lg text-slate-700">Your back card is safe with us</p>
+                </button>
+
+                <button x-on:click="selected = 'train'" x-bind:class="selected == 'train' ? 'bg-yellow-100': ''"
+                    class="flex gap-4 place-items-center border border-solid rounded-full px-6 w-fit">
+                    <img class="h-24 w-24" src="./public/high-speed-rail-svgrepo-com.svg" alt="Train SVG">
+                    <p class="font-bold text-lg text-slate-700">Travel fast and best prices</p>
+                </button>
+
+                <button x-on:click="selected = 'ariplane'" x-bind:class="selected == 'ariplane' ? 'bg-yellow-100': ''"
+                    class="flex gap-4 place-items-center border border-solid rounded-full px-6 w-fit">
+                    <img class="h-24 w-24" src="./public/hot-air-balloon-svgrepo-com.svg" alt="Baloon SVG">
+                    <p class="font-bold text-lg text-slate-700">Fast travel with airplane or baloon</p>
+                </button>
+
+            </div>
+
+
+            <div x-show="selected == 'card'" class="grid lg:grid-cols-2 grid-cols-1 lg:mt-24 mt-16">
+
+                <div class="lg:pr-16 px-4">
+
+                    <hgroup>
+                        <h1 class="font-serif font-bold lg:text-4xl text-xl">Card secured thru latest tech</h1>
+                        <h2 class="my-4">Customers come to you expecting answers. Meet them where they are, across any
+                            channel, and
+                            then
+                            personalize the conversation around their exact needs.</h2>
+                    </hgroup>
+
+                    <div class="mt-16 border border-t-solid border-slate-300">
+
+                        <p class="font-mono mt-6">FEATURES</p>
+
+                        <div class="flex flex-col gap-4 mt-12 text-lg w-1/2">
+
+                            <button class="flex place-items-center gap-4 py-4 px-2 hover:bg-yellow-100">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                                </svg>
+                                <span">Messaging</span>
+                            </button>
+
+                            <button class="flex place-items-center gap-4 py-4 px-2 hover:bg-yellow-100">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M6 12.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5ZM3 8.062C3 6.76 4.235 5.765 5.53 5.886a26.58 26.58 0 0 0 4.94 0C11.765 5.765 13 6.76 13 8.062v1.157a.933.933 0 0 1-.765.935c-.845.147-2.34.346-4.235.346-1.895 0-3.39-.2-4.235-.346A.933.933 0 0 1 3 9.219V8.062Zm4.542-.827a.25.25 0 0 0-.217.068l-.92.9a24.767 24.767 0 0 1-1.871-.183.25.25 0 0 0-.068.495c.55.076 1.232.149 2.02.193a.25.25 0 0 0 .189-.071l.754-.736.847 1.71a.25.25 0 0 0 .404.062l.932-.97a25.286 25.286 0 0 0 1.922-.188.25.25 0 0 0-.068-.495c-.538.074-1.207.145-1.98.189a.25.25 0 0 0-.166.076l-.754.785-.842-1.7a.25.25 0 0 0-.182-.135Z" />
+                                    <path
+                                        d="M8.5 1.866a1 1 0 1 0-1 0V3h-2A4.5 4.5 0 0 0 1 7.5V8a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1v1a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-1a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1v-.5A4.5 4.5 0 0 0 10.5 3h-2V1.866ZM14 7.5V13a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.5A3.5 3.5 0 0 1 5.5 4h5A3.5 3.5 0 0 1 14 7.5Z" />
+                                </svg>
+                                <span>AI Automation</span>
+                            </button>
+
+                            <button class="flex place-items-center gap-4 py-4 px-2 hover:bg-yellow-100">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6"
+                                    viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                    <path
+                                        d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                                </svg>
+                                <span>Help Center</span>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="mt-6">
+
+                    <figure class="lg:block hidden">
+                        <img class="w-full aspect-video rounded-lg object-cover"
+                            src="./public/online shoping with card.jpg" alt="Online shopping">
+                    </figure>
+
+                </div>
+
+            </div>
+
+
+            <div x-show="selected == 'train'" class="grid lg:grid-cols-2 grid-cols-1 lg:mt-24 mt-16">
+
+                <div class="lg:pr-16 px-4">
+
+                    <hgroup>
+                        <h1 class="font-serif font-bold lg:text-4xl text-xl">Lorem, ipsum dolor sit amet consectetur
+                            adipisicing elit.</h1>
+                        <h2 class="my-4">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, quam! Lorem ipsum dolor sit
+                            amet.
+                        </h2>
+                    </hgroup>
+
+                    <div class="mt-16 border border-t-solid border-slate-300">
+
+                        <p class="font-mono mt-6">FEATURES</p>
+
+                        <div class="flex flex-col gap-4 mt-12 text-lg w-1/2">
+
+                            <button class="flex place-items-center gap-4 py-4 px-2 hover:bg-yellow-100">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                                </svg>
+                                <span">Messaging</span>
+                            </button>
+
+                            <button class="flex place-items-center gap-4 py-4 px-2 hover:bg-yellow-100">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M6 12.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5ZM3 8.062C3 6.76 4.235 5.765 5.53 5.886a26.58 26.58 0 0 0 4.94 0C11.765 5.765 13 6.76 13 8.062v1.157a.933.933 0 0 1-.765.935c-.845.147-2.34.346-4.235.346-1.895 0-3.39-.2-4.235-.346A.933.933 0 0 1 3 9.219V8.062Zm4.542-.827a.25.25 0 0 0-.217.068l-.92.9a24.767 24.767 0 0 1-1.871-.183.25.25 0 0 0-.068.495c.55.076 1.232.149 2.02.193a.25.25 0 0 0 .189-.071l.754-.736.847 1.71a.25.25 0 0 0 .404.062l.932-.97a25.286 25.286 0 0 0 1.922-.188.25.25 0 0 0-.068-.495c-.538.074-1.207.145-1.98.189a.25.25 0 0 0-.166.076l-.754.785-.842-1.7a.25.25 0 0 0-.182-.135Z" />
+                                    <path
+                                        d="M8.5 1.866a1 1 0 1 0-1 0V3h-2A4.5 4.5 0 0 0 1 7.5V8a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1v1a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-1a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1v-.5A4.5 4.5 0 0 0 10.5 3h-2V1.866ZM14 7.5V13a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.5A3.5 3.5 0 0 1 5.5 4h5A3.5 3.5 0 0 1 14 7.5Z" />
+                                </svg>
+                                <span>AI Automation</span>
+                            </button>
+
+                            <button class="flex place-items-center gap-4 py-4 px-2 hover:bg-yellow-100">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6"
+                                    viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                    <path
+                                        d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                                </svg>
+                                <span>Help Center</span>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="mt-6">
+
+                    <figure class="lg:block hidden">
+                        <img class="w-full aspect-video rounded-lg object-cover"
+                            src="./public/online shoping with card.jpg" alt="Online shopping">
+                    </figure>
+
+                </div>
+
+            </div>
+
+
+            <div x-show="selected == 'ariplane'" class="grid lg:grid-cols-2 grid-cols-1 lg:mt-24 mt-16">
+
+                <div class="lg:pr-16 px-4">
+
+                    <hgroup>
+                        <h1 class="font-serif font-bold lg:text-4xl text-xl">
+                            Lorem ipsum dolor sit. adipisicing elit.
+                        </h1>
+                        <h2 class="my-4">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </h2>
+                    </hgroup>
+
+                    <div class="mt-16 border border-t-solid border-slate-300">
+
+                        <p class="font-mono mt-6">FEATURES</p>
+
+                        <div class="flex flex-col gap-4 mt-12 text-lg w-1/2">
+
+                            <button class="flex place-items-center gap-4 py-4 px-2 hover:bg-yellow-100">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                                </svg>
+                                <span">Messaging</span>
+                            </button>
+
+                            <button class="flex place-items-center gap-4 py-4 px-2 hover:bg-yellow-100">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M6 12.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5ZM3 8.062C3 6.76 4.235 5.765 5.53 5.886a26.58 26.58 0 0 0 4.94 0C11.765 5.765 13 6.76 13 8.062v1.157a.933.933 0 0 1-.765.935c-.845.147-2.34.346-4.235.346-1.895 0-3.39-.2-4.235-.346A.933.933 0 0 1 3 9.219V8.062Zm4.542-.827a.25.25 0 0 0-.217.068l-.92.9a24.767 24.767 0 0 1-1.871-.183.25.25 0 0 0-.068.495c.55.076 1.232.149 2.02.193a.25.25 0 0 0 .189-.071l.754-.736.847 1.71a.25.25 0 0 0 .404.062l.932-.97a25.286 25.286 0 0 0 1.922-.188.25.25 0 0 0-.068-.495c-.538.074-1.207.145-1.98.189a.25.25 0 0 0-.166.076l-.754.785-.842-1.7a.25.25 0 0 0-.182-.135Z" />
+                                    <path
+                                        d="M8.5 1.866a1 1 0 1 0-1 0V3h-2A4.5 4.5 0 0 0 1 7.5V8a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1v1a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-1a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1v-.5A4.5 4.5 0 0 0 10.5 3h-2V1.866ZM14 7.5V13a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.5A3.5 3.5 0 0 1 5.5 4h5A3.5 3.5 0 0 1 14 7.5Z" />
+                                </svg>
+                                <span>AI Automation</span>
+                            </button>
+
+                            <button class="flex place-items-center gap-4 py-4 px-2 hover:bg-yellow-100">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6"
+                                    viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                    <path
+                                        d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                                </svg>
+                                <span>Help Center</span>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="mt-6">
+
+                    <figure class="lg:block hidden">
+                        <img class="w-full aspect-video rounded-lg object-cover"
+                            src="./public/online shoping with card.jpg" alt="Online shopping">
+                    </figure>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="my-24 bg-black-100 px-6 pt-6 pb-16 bg-gray-950 text-white">
+
+        <div class="container mx-auto">
+            <div class="border-b-2 border-solid border-white py-4">
+                <span class="font-mono lg:ml-0 ml-4">CUSTOMER STORIES</span>
+            </div>
+
+            <div x-data="{
+                currentTestimonial: 1,
+                prevTestimonial: function(){
+                    if (this.currentTestimonial == 1) {
+                        this.currentTestimonial = 3
+                    } else {
+                        this.currentTestimonial -= 1
+                    }
+                },
+                nextTestimonial: function(){
+                    if (this.currentTestimonial == 3) {
+                        this.currentTestimonial = 1
+                    } else {
+                        this.currentTestimonial += 1
+                    }
+                }
+            }">
+
+                <div x-show="currentTestimonial == 1" class="grid lg:grid-cols-2 grid-cols-1 lg:mt-16 mt-6">
+
+                    <div class="pr-4">
+
+                        <p class="font-serif lg:text-6xl text-4xl text-yellow-50 mb-8">
+                            We would not use other services even if they are free alternatives.
+                            Best software we've ever used!
+                        </p>
+
+                        <a class="underline text-white" href="#">Read customer full story</a>
+
+                    </div>
+
+                    <figure class="lg:block hidden">
+                        <img class="w-full aspect-video" src="./public/office.jpg" alt="Image with an office meeting">
+                    </figure>
+
+                </div>
+
+                <div x-show="currentTestimonial == 2" class="grid lg:grid-cols-2 grid-cols-1 lg:mt-16 mt-6">
+
+                    <div class="pr-4">
+
+                        <p class="font-serif lg:text-6xl text-4xl text-yellow-50 mb-8">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+
+                        <a class="underline text-white" href="#">Read customer full story</a>
+
+                    </div>
+
+                    <figure class="lg:block hidden">
+                        <img class="w-full aspect-video" src="./public/office.jpg" alt="Image with an office meeting">
+                    </figure>
+
+                </div>
+
+                <div x-show="currentTestimonial == 3" class="grid lg:grid-cols-2 grid-cols-1 lg:mt-16 mt-6">
+
+                    <div class="pr-4">
+
+                        <p class="font-serif lg:text-6xl text-4xl text-yellow-50 mb-8">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing.
+                        </p>
+
+                        <a class="underline text-white" href="#">Read customer full story</a>
+
+                    </div>
+
+                    <figure class="lg:block hidden">
+                        <img class="w-full aspect-video" src="./public/office.jpg" alt="Image with an office meeting">
+                    </figure>
+
+                </div>
+
+
+                <div class="flex place-content-center gap-6 mt-12">
+                    <button x-on:click="prevTestimonial">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="h-8 w-8" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z" />
+                        </svg>
+                    </button>
+
+                    <button x-on:click="nextTestimonial">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="h-8 w-8" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="bg-yellow-50">
+
+        <div class="container mx-auto">
+
+            <div class="grid lg:grid-cols-2 grid-cols-1 gap-4 px-4">
+
+                <div>
+                    <p class="font-serif lg:text-6xl text-4xl underline">
+                        Take a quick tour
+                    </p>
+                </div>
+
+                <div class="flex flex-col">
+                    <p class="text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, facere?</p>
+
+                    <div class="mt-12">
+                        <a href="#" class="bg-purple-700 text-white py-4 px-6 rounded-full font-bold">
+                            Start my tour
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <figure class="mt-16">
+                <img class="w-full h-full aspect-video rounded-md object-cover" src="./public/pc setup desk.jpg"
+                    alt="" />
+            </figure>
+
+        </div>
+
+    </section>
+
+
+    <footer class="bg-black text-white py-16 px-6 mt-24">
+
+        <div class="container mx-auto mb-24">
+
+            <div class="grid grid-flow-col gap-16 auto-cols-max">
+
+
+                <div class="flex flex-col w-fit">
+                    <p class="font-bold lg:text-2xl text-xl mb-6">Products</p>
+                    <a class="text-white py-2 mb-2 hover:underline" href="#">Product 1</a>
+                    <a class="text-white py-2 mb-2 hover:underline" href="#">Product 2</a>
+                    <a class="text-white py-2 mb-2 hover:underline" href="#">Product 3</a>
+                    <a class="text-white py-2 mb-2 hover:underline" href="#">Product 4</a>
+                    <a class="text-white py-2 mb-2 hover:underline" href="#">Product 5</a>
+                    <a class="text-white py-2 mb-2 hover:underline" href="#">Product 6</a>
+                </div>
+
+
+                <div class="flex flex-col w-fit">
+                    <p class="font-bold lg:text-2xl text-xl mb-6">Features</p>
+                    <a class="text-white py-2 mb-2 hover:underline" href="#">Feature 1</a>
+                    <a class="text-white py-2 mb-2 hover:underline" href="#">Feature 2</a>
+                    <a class="text-white py-2 mb-2 hover:underline" href="#">Feature 3</a>
+                    <a class="text-white py-2 mb-2 hover:underline" href="#">Feature 4</a>
+                    <a class="text-white py-2 mb-2 hover:underline" href="#">Feature 5</a>
+                </div>
+
+
+                <div class="flex flex-col w-fit">
+                    <p class="font-bold lg:text-2xl text-xl mb-6">Company</p>
+                    <a class="text-white py-2 mb-2 hover:underline" href="#">About us</a>
+                    <a class="text-white py-2 mb-2 hover:underline" href="#">Services</a>
+                    <a class="text-white py-2 mb-2 hover:underline" href="#">Customer stories</a>
+                    <a class="text-white py-2 mb-2 hover:underline" href="#">GDPR</a>
+                    <a class="text-white py-2 mb-2 hover:underline" href="#">Cookies</a>
+                </div>
+
+            </div>
+
+
+        </div>
+    </footer>
+
+</body>
+
+</html>

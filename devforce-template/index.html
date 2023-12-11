@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./public/unocss.js"></script>
+    <script defer src="./public/alpinejs.js"></script>
+    <link rel="stylesheet" href="./public/custom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>DevForce</title>
+</head>
+
+<body un-cloak class="bg-blue-30">
+
+    <nav class="container mx-auto py-6">
+
+        <div class="flex justify-between">
+
+            <div class="flex gap-4 font-bold">
+                <a class="text-blue-950 hover:text-blue-500 py-6 px-2 mr-12" href="#">DevForce</a>
+                <a class="text-blue-950 hover:text-blue-500 py-6 px-2" href="#">Products</a>
+                <a class="text-blue-950 hover:text-blue-500 py-6 px-2" href="#">Industries</a>
+                <a class="text-blue-950 hover:text-blue-500 py-6 px-2" href="#">Customers</a>
+                <a class="text-blue-950 hover:text-blue-500 py-6 px-2" href="#">Learning</a>
+                <a class="text-blue-950 hover:text-blue-500 py-6 px-2" href="#">Support</a>
+                <a class="text-blue-950 hover:text-blue-500 py-6 px-2" href="#">Company</a>
+            </div>
+
+            <div class="flex gap-4 items-center">
+
+                <a class="text-blue-950 hover:text-blue-500 px-2 flex flex-col place-content-center" href="#">
+                    <span class="text-center underline mb-2">Contact Us</span>
+                    <span>1900-1999-222</span>
+                </a>
+
+                <a class="py-4 px-4 hover:bg-blue-200 hover:fill-blue-500 rounded-full" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                    </svg>
+                </a>
+
+                <a class="flex items-center py-4 px-4 rounded-full hover:fill-blue-500 hover:bg-blue-200" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" viewBox="0 0 16 16">
+                        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+                    </svg>
+                    <span class="font-bold text-blue-950">Login</span>
+                </a>
+
+                <a class="font-bold text-white bg-green-600 hover:bg-dark py-4 px-6 rounded-md" href="#">
+                    Try for free
+                </a>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <div class="bg-hexagon">
+        <section class="container mx-auto py-12 flex items-center gap-12">
+
+            <div>
+                <h1 class="text-6xl text-blue-900 font-bold mb-6">Data + AI + CRM + Trust <br> = more sales and happier
+                    customers.
+                </h1>
+                <p class="text-xl">
+                    Discover how unified data and trusted AI help you connect with customers in a whole new way.
+                </p>
+
+                <div class="mt-16 flex gap-6">
+                    <button class="text-white bg-blue-500 hover:bg-blue-900 py-4 px-6 rounded-md font-bold">
+                        Start free trial
+                    </button>
+                    <button class="text-blue-900 hover:bg-blue-50 py-4 px-6 rounded-md font-bold border-1 border-solid">
+                        Watch demos
+                    </button>
+                </div>
+            </div>
+
+            <figure>
+                <img class="h-132 w-auto rounded-lg" src="./public/womens office casual metting.jpg" alt="">
+            </figure>
+
+        </section>
+    </div>
+
+
+    <section class="container mx-auto py-16">
+
+        <div class="flex place-content-center">
+            <h1 class="text-4xl font-bold text-blue-900">What's new at Devforce?</h1>
+        </div>
+
+        <div class="flex gap-6 mt-18 place-content-center">
+            <a href="#">
+                <article class="bg-white w-min shadow-xl rounded-xl pb-6">
+                    <figure>
+                        <img class="aspect-video h-70 w-auto object-cover rounded-t-xl"
+                            src="./public/man reading article.jpg" alt="">
+                    </figure>
+                    <div class="flex flex-col gap-6 px-6 my-6">
+                        <h1 class="text-blue-950 text-2xl font-bold">
+                            Meet Devforce Starter: the simple, powerful CRM suite.
+                        </h1>
+                        <a href="#" class="w-fit text-blue-950 py-2 text-lg underline">Watch demo</a>
+                    </div>
+                </article>
+            </a>
+
+            <a href="#">
+                <article class="bg-white w-min shadow-xl rounded-xl pb-6">
+                    <figure>
+                        <img class="aspect-video h-70 w-auto object-cover rounded-t-xl"
+                            src="./public/woman typing view from above.jpg" alt="">
+                    </figure>
+                    <div class="flex flex-col gap-6 px-6 my-6">
+                        <h1 class="text-blue-950 text-2xl font-bold">
+                            Join the Salesblazer movement.
+                        </h1>
+                        <a href="#" class="w-fit text-blue-950 py-2 text-lg underline">Get started</a>
+                    </div>
+                </article>
+            </a>
+
+            <a href="#">
+                <article class="bg-white w-min shadow-xl rounded-xl pb-6">
+                    <figure>
+                        <img class="aspect-video h-70 w-auto object-cover rounded-t-xl"
+                            src="./public/man wandering and writting.jpg" alt="">
+                    </figure>
+                    <div class="flex flex-col gap-6 px-6 my-6">
+                        <h1 class="text-blue-950 text-2xl font-bold">
+                            Boost small business growth with Data + AI + CRM + Trust.
+                        </h1>
+                        <a href="#" class="w-fit text-blue-950 py-2 text-lg underline">Explore the solution</a>
+                    </div>
+                </article>
+            </a>
+
+        </div>
+
+    </section>
+
+    <section class="container mx-auto py-16">
+
+        <div class="flex place-content-center">
+            <h1 class="text-4xl font-bold text-blue-900 text-center">
+                Learn how Devforce helps you work <br> smarter and grow faster.
+            </h1>
+        </div>
+
+        <div class="flex gap-6 mt-18 place-content-center">
+
+            <a href="#">
+                <article class="w-min rounded-xl pb-6">
+                    <figure>
+                        <img class="h-80 w-80 object-cover rounded-full border-16 border-solid border-blue-400"
+                            src="./public/woman typing view from above.jpg" alt="">
+                    </figure>
+                    <div class="flex flex-col gap-6 px-6 my-6">
+                        <h1 class="text-blue-950 text-2xl font-bold">
+                            Small Business
+                        </h1>
+                        <p class="mt-4 text-lg text-blue-950">
+                            Sell smarter and provide support faster in a single app.
+                        </p>
+                        <a href="#" class="w-fit text-blue-950 py-2 text-lg underline">Watch demos</a>
+                    </div>
+                </article>
+            </a>
+
+            <a href="#">
+                <article class="w-min rounded-xl pb-6">
+                    <figure>
+                        <img class="h-80 w-80 object-cover rounded-full border-16 border-solid border-green-300"
+                            src="./public/man reading article.jpg" alt="">
+                    </figure>
+                    <div class="flex flex-col gap-6 px-6 my-6">
+                        <h1 class="text-blue-950 text-2xl font-bold">
+                            Sales
+                        </h1>
+                        <p class="mt-4 text-lg text-blue-950">Close more deals faster and unleash growth with AI-driven
+                            sales.</p>
+                        <a href="#" class="w-fit text-blue-950 py-2 text-lg underline">Watch demos</a>
+                    </div>
+                </article>
+            </a>
+
+            <a href="#">
+                <article class="w-min rounded-xl pb-6">
+                    <figure>
+                        <img class="h-80 w-80 object-cover rounded-full border-16 border-solid border-purple-200"
+                            src="./public/womens office casual metting.jpg" alt="">
+                    </figure>
+                    <div class="flex flex-col gap-6 px-6 my-6">
+                        <h1 class="text-blue-950 text-2xl font-bold">
+                            Service
+                        </h1>
+                        <p class="mt-4 text-lg text-blue-950">Easily scale service and boost productivity with AI
+                            support.</p>
+                        <a href="#" class="w-fit text-blue-950 py-2 text-lg underline">Watch demos</a>
+                    </div>
+                </article>
+            </a>
+
+
+            <a href="#">
+                <article class="w-min rounded-xl pb-6">
+                    <figure>
+                        <img class="h-80 w-80 object-cover rounded-full border-16 border-solid border-rose-200"
+                            src="./public/man wandering and writting.jpg" alt="">
+                    </figure>
+                    <div class="flex flex-col gap-6 px-6 my-6">
+                        <h1 class="text-blue-950 text-2xl font-bold">
+                            See all products
+                        </h1>
+                        <p class="mt-4 text-lg text-blue-950">Connect with customers in a new way with Customer 360
+                            driven by AI.</p>
+                        <a href="#" class="w-fit text-blue-950 py-2 text-lg underline">Watch demos</a>
+                    </div>
+                </article>
+            </a>
+
+        </div>
+
+    </section>
+
+    <section class="container mx-auto py-16">
+
+        <div class="flex flex-col place-items-center">
+            <h1 class="text-4xl font-bold text-blue-900">
+                Find innovations for any industry.
+            </h1>
+            <p class="text-xl font-bold text-blue-950 mt-6">
+                Whatever your industry, we offer solutions to modernize your
+                business, save time, and lower costs.
+            </p>
+
+            <a href="#"
+                class="my-12 text-blue-950 text-lg font-bold w-fit px-6 py-4 border-2 border-solid border-blue-400 rounded-lg hover:bg-blue-50">
+                See all industries
+            </a>
+        </div>
+
+        <div class="flex gap-16 mt-12 place-content-center">
+
+            <a href="#" class="flex flex-col gap-4 place-items-center w-fit">
+                <figure>
+                    <img class="h-32 w-auto rounded-full bg-blue-50" src="./public/hotel-svgrepo-com.svg" alt="">
+                </figure>
+                <h1 class="text-xl text-blue-950 font-bold">Financial Services</h1>
+            </a>
+
+            <a href="#" class="flex flex-col gap-4 place-items-center w-fit">
+                <figure>
+                    <img class="h-32 w-auto rounded-full bg-blue-50" src="./public/emu-svgrepo-com.svg" alt="">
+                </figure>
+                <h1 class="text-xl text-blue-950 font-bold">Transportation Services</h1>
+            </a>
+
+            <a href="#" class="flex flex-col gap-4 place-items-center w-fit">
+                <figure>
+                    <img class="h-32 w-auto rounded-full bg-blue-50" src="./public/coconut-tree-svgrepo-com.svg" alt="">
+                </figure>
+                <h1 class="text-xl text-blue-950 font-bold">Vacation Services</h1>
+            </a>
+
+        </div>
+
+    </section>
+
+    <section class="w-full h-full bg-green-50 rounded-t-full">
+
+        <div class="flex flex-col place-items-center pt-16">
+            <h1 class="text-4xl font-bold text-blue-950">
+                See how Devforce customers become customer companies.
+            </h1>
+            <p class="text-xl font-bold text-blue-950 mt-6">
+                Learn how companies of every description are connecting with customers in a whole new way.
+            </p>
+
+            <a href="#"
+                class="my-12 text-blue-950 text-lg font-bold w-fit px-6 py-4 border-2 border-solid border-green-400 rounded-lg hover:bg-green-100">
+                See all custumer stories
+            </a>
+        </div>
+
+
+        <div class="flex gap-6 place-content-center">
+
+            <figure class="bg-white w-fit p-6 rounded-xl">
+                <img class="h-auto w-32 object-cover" src="./public/Google.png" alt="">
+            </figure>
+
+            <figure class="bg-white w-fit p-6 rounded-xl">
+                <img class="h-auto w-32 object-cover" src="./public/cocacola.webp" alt="">
+            </figure>
+
+            <figure class="bg-white w-fit p-6 rounded-xl">
+                <img class="h-auto w-32 object-cover" src="./public/Salesforce-logo.webp" alt="">
+            </figure>
+
+            <figure class="bg-white w-fit p-6 rounded-xl">
+                <img class="h-auto w-32 object-cover" src="./public/cummins-logo.png" alt="">
+            </figure>
+
+        </div>
+
+    </section>
+
+    <div class="bg-blue-100">
+
+        <section class="container py-64 mx-auto">
+
+            <div class="grid grid-cols-2 place-items-center">
+
+                <figure>
+                    <img class="h-100 w-100 object-cover rounded-full" src="./public/3dcartoon.jpg" alt="">
+                </figure>
+
+                <div>
+                    <hgroup class="mb-12">
+                        <h1 class="font-bold text-6xl text-blue-900">
+                            Discover apps and expertise to extend Salesforce.
+                        </h1>
+                        <p class="mt-4 text-lg text-blue-950">
+                            Browse our AppExchange marketplace, with thousands of customized apps and specialized
+                            consulting
+                            partners to help any sized business craft a perfectly tailored Customer 360 solution.
+                        </p>
+                    </hgroup>
+
+                    <button
+                        class="py-4 px-6 rounded-md border-1 border-red-150 border-solid bg-blue-50 hover:bg-blue-50">
+                        Visit AppExhange
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+    </div>
+
+
+    <section class="container mx-auto py-24">
+
+        <div class="flex place-content-center">
+            <h1 class="font-bold text-blue-950 text-4xl text-center w-1/2">
+                Try Salesforce for free. No credit card required, no software to install.
+            </h1>
+        </div>
+
+        <div class="flex place-content-center mt-12">
+            <button class="py-4 px-6 bg-blue-500 hover:bg-blue-900 text-white font-bold rounded-md shadow-md">
+                Start free trial
+            </button>
+        </div>
+
+        <figure class="flex place-content-center mt-12">
+            <img class="h-150 w-screen rounded-md object-cover" src="./public/website on monitor.jpg" alt="">
+        </figure>
+
+    </section>
+
+
+
+    <footer class="container mx-auto py-16">
+
+        <div class="flex ">
+
+            <div class="mr-16">
+
+                <figure class="mb-12">
+                    <img class="h-24 w-auto object-cover rounded-full" src="./public/fire logo.jpg" alt="">
+                </figure>
+
+                <p class="font-bold mb-6">Call us at 1-800-664-9073</p>
+
+                <a class="font-bold text-blue-500" href="#">See all ways to contact us</a>
+
+            </div>
+
+
+            <div class="flex justify-center gap-54 w-full">
+
+
+                <div class="flex flex-col">
+
+                    <h1 class="font-bold mb-6">New to Devforce?</h1>
+
+                    <a class="py-2 text-blue-800 hover:underline" href="#">What is CRM?</a>
+                    <a class="py-2 text-blue-800 hover:underline" href="#">Help Desk Software</a>
+                    <a class="py-2 text-blue-800 hover:underline" href="#">Explore All Products</a>
+                    <a class="py-2 text-blue-800 hover:underline" href="#">Product Pricing</a>
+                    <a class="py-2 text-blue-800 hover:underline" href="#">Customer Success</a>
+                    <a class="py-2 text-blue-800 hover:underline" href="#">What is CRM?</a>
+                    <a class="py-2 text-blue-800 hover:underline" href="#">Product Pricing</a>
+                    <a class="py-2 text-blue-800 hover:underline" href="#">Product Pricing</a>
+
+                </div>
+
+
+                <div class="flex flex-col">
+
+                    <h1 class="font-bold mb-6">About Devforce?</h1>
+
+                    <a class="py-2 text-blue-800 hover:underline" href="#">What is CRM?</a>
+                    <a class="py-2 text-blue-800 hover:underline" href="#">Help Desk Software</a>
+                    <a class="py-2 text-blue-800 hover:underline" href="#">Explore All Products</a>
+                    <a class="py-2 text-blue-800 hover:underline" href="#">Product Pricing</a>
+                    <a class="py-2 text-blue-800 hover:underline" href="#">Customer Success</a>
+                    <a class="py-2 text-blue-800 hover:underline" href="#">What is CRM?</a>
+                    <a class="py-2 text-blue-800 hover:underline" href="#">Product Pricing</a>
+                    <a class="py-2 text-blue-800 hover:underline" href="#">Product Pricing</a>
+
+                </div>
+
+
+                <div class="flex flex-col">
+
+                    <h1 class="font-bold mb-6">Popular Links</h1>
+
+                    <a class="py-2 text-blue-800 hover:underline" href="#">What is CRM?</a>
+                    <a class="py-2 text-blue-800 hover:underline" href="#">Help Desk Software</a>
+                    <a class="py-2 text-blue-800 hover:underline" href="#">Explore All Products</a>
+                    <a class="py-2 text-blue-800 hover:underline" href="#">Product Pricing</a>
+                    <a class="py-2 text-blue-800 hover:underline" href="#">Customer Success</a>
+                    <a class="py-2 text-blue-800 hover:underline" href="#">What is CRM?</a>
+                    <a class="py-2 text-blue-800 hover:underline" href="#">Product Pricing</a>
+                    <a class="py-2 text-blue-800 hover:underline" href="#">Product Pricing</a>
+
+                </div>
+
+            </div>
+        </div>
+
+
+    </footer>
+
+    <div class="bg-blue-900 h-16 w-full py-6">
+
+        <div class="container mx-auto text-white">
+            <p class="text-xs text-center">
+                © Copyright 2023 Devforce, Inc. All rights reserved. Various trademarks held by their respective owners.
+                Devforce, Inc. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, nihil explicabo! Atque,
+                suscipit.
+            </p>
+
+            <div class="flex place-content-center gap-6 mt-6">
+                <a class="underline text-xs text-blue-100" href="#">Legal</a>
+                <a class="underline text-xs text-blue-100" href="#">Terms of Service</a>
+                <a class="underline text-xs text-blue-100" href="#">Privacy Information</a>
+                <a class="underline text-xs text-blue-100" href="#">Responsible Disclosure</a>
+                <a class="underline text-xs text-blue-100" href="#">Trust</a>
+                <a class="underline text-xs text-blue-100" href="#">Contact</a>
+                <a class="underline text-xs text-blue-100" href="#">Cookie Preferences</a>
+                <a class="underline text-xs text-blue-100" href="#">Your Privacy Choices</a>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
